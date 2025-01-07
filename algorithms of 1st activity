@@ -1,0 +1,22 @@
+Steps:
+1. Define the Student class with the __init__ method to initialize student details (student_id, name, age, courses, grade).
+
+2. Define the StudentRecords class with the __init__ method to initialize an empty dictionary records.
+
+3. Implement the add_student method in StudentRecords to add a student to the records dictionary using student_id as the key.
+
+4. Implement the remove_student method in StudentRecords to remove a student from the records dictionary based on student_id.
+
+5. Implement the get_student method in StudentRecords to retrieve a student from the records dictionary using student_id.
+
+6. Implement the update_student method in StudentRecords to update student details using keyword arguments (kwargs). Use the setattr function to update attributes dynamically.
+
+7. Create an instance of StudentRecords named records.
+
+8. Create instances of the Student class with sample data (student1 and student2).
+
+9. Add the student instances to the records instance using the add_student method.
+
+10. Retrieve and print student details using the get_student method and accessing the attributes.
+
+11. Update student details using the update_student method and print the updated information.
