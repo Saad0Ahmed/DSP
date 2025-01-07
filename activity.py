@@ -1,47 +1,40 @@
 class Student:
-    def __init__(self, student_id, name, dob, grade_level, gpa, courses, contact):
+    def __init__(self, student_id, name, age, courses, grade):
         self.student_id = student_id
         self.name = name
-        self.dob = dob
-        self.grade_level = grade_level
-        self.gpa = gpa
+        self.age = age
         self.courses = courses
-        self.contact = contact
+        self.grade = grade
 
 class StudentRecords:
     def __init__(self):
-        self.students = {}
+        self.records = {}
 
-    def add(self, student):
-        self.students[student.student_id] = student
+    def add_student(self, student):
+        self.records[student.student_id] = student
 
-    def get(self, student_id):
-        return self.students.get(student_id)
+    def remove_student(self, student_id):
+        self.records.pop(student_id, None)
 
-    def update(self, student_id, **kwargs):
-        student = self.get(student_id)
+    def get_student(self, student_id):
+        return self.records.get(student_id)
+
+    def update_student(self, student_id, **kwargs):
+        student = self.records.get(student_id)
         if student:
             for key, value in kwargs.items():
                 setattr(student, key, value)
 
-    def list(self):
-        return self.students.values()
-
-    def delete(self, student_id):
-        self.students.pop(student_id, None)
-
-
 # Example usage
 records = StudentRecords()
-records.add(Student(1, "John Doe", "2005-03-15", 10, 3.8, ["Math", "Science"], "john.doe@example.com"))
+student1 = Student(1, 'John Doe', 20, ['Math', 'Physics'], 'A')
+student2 = Student(2, 'Jane Smith', 22, ['Biology', 'Chemistry'], 'B')
 
-# Print student name
-print(records.get(1).name)  # Output: John Doe
+records.add_student(student1)
+records.add_student(student2)
 
-# Update GPA and list students
-records.update(1, gpa=3.9)
-for student in records.list():
-    print(student.name, student.gpa)
+print(records.get_student(1).name)  # Output: John Doe
+print(records.get_student(2).courses)  # Output: ['Biology', 'Chemistry']
 
-# Delete student
-records.delete(1)
+records.update_student(1, grade='A+')
+print(records.get_student(1).grade)  # Output: A+
