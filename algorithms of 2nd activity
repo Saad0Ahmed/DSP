@@ -1,0 +1,39 @@
+Classes and Methods
+Student Class
+
+Attributes: student_id, name, age, major, gpa
+
+Methods:
+
+__init__: Initializes a student.
+
+__str__: Returns string representation.
+
+StudentRecords Class
+
+Attributes: records (list of Student objects)
+
+Methods:
+
+__init__: Initializes empty records list.
+
+add_student: Adds a student.
+
+remove_student: Removes a student by student_id.
+
+get_student: Gets a student by student_id.
+
+__str__: Returns string representation of all students.
+
+Main Program Steps
+1. Initialize StudentRecords.
+
+2. Add Students: Add Student objects to records.
+
+3. Display Students: Print all students.
+
+4. Get a Student: Print a specific student by student_id.
+
+5. Remove a Student: Remove a student by student_id.
+
+6. Display Remaining Students: Print remaining students after removal.
