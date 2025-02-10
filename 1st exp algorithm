@@ -1,0 +1,19 @@
+i) Python Prgram to demonstrate working of lists
+Algorithm: Creating list
+steps:
+1. start
+2. create a empty list using square brackets []
+3. print the empty list
+4. end
+
+Algorithm: creating a list of numbers
+steps:
+1. start
+2. create a list called 'list1' & add items to it in numbers [1,2,3,4,5]
+3. print the list1
+4. end
+
+Algorithm: creating a list of multiple datatypes
+steps:
+1. start
+2. 
