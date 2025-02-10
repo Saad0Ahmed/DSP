@@ -10,10 +10,6 @@ print("List of numbers:",list1)
 list2=[1,2,"Mon",2.4]
 print("List of multiple datatypes:",list2)
 
-#creating a list of strings
-list3=["Mon","Tues"]
-print("List of strings:",list3)
-
 #indexing and slicing
 list4=["Jan","Feb","March"]
 print("List of strings:",list4)
