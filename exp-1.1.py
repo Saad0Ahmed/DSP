@@ -11,8 +11,9 @@ list2=[1,2,"Mon",2.4]
 print("List of multiple datatypes:",list2)
 
 #indexing and slicing
-list3=["Jan","Feb","March"]
-print("List of strings:",list3)
+list3=["Jan","Feb","March","April","May"]
+print(list3[0])
+print(list3[1:4])
 
 #creating a multi-dimensional list
 list4=[["Jan","Feb"],["June","July"]]
